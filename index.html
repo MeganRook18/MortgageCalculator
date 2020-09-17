@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Mortgage Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="title">RxJS Based Mortgage Calculator</p>
+    </header>
+    <div id="app">
+      <h1>Mortgage Calculator</h1>
+
+      <div class="container">
+        <div class="input-wrapper">
+          <label for="loanAmount">Mortgage Amount (£)</label>
+          <input type="number" name="loanAmount" id="loanAmount" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="interest">Interest Rate (£)</label>
+          <input type="number" name="interest" id="interest" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="loanLength">Mortgage Length</label>
+          <input
+            type="radio"
+            name="loanLength"
+            class="loanLength"
+            value="180"
+          />
+          15 yr
+
+          <input
+            type="radio"
+            name="loanLength"
+            class="loanLength"
+            value="360"
+          />
+          30 yr
+        </div>
+
+        <div>
+          Your expected monthly payment is: £<strong id="expected"></strong>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
